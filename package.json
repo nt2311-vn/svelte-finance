@@ -33,5 +33,11 @@
 		"autoprefixer": "^10.4.19",
 		"prettier-plugin-tailwindcss": "^0.6.4"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"bits-ui": "^0.21.12",
+		"clsx": "^2.1.1",
+		"tailwind-merge": "^2.4.0",
+		"tailwind-variants": "^0.2.1"
+	}
 }

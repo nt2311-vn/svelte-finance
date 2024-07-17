@@ -20,8 +20,8 @@
 	<div class="flex h-14 items-center px-12 py-8">
 		<nav class="flex flex-col space-x-4 md:flex-row md:space-x-4 md:space-y-0">
 			{#each featureLists as fList}
-				<Button href={fList.relPath}>
-					<fList.icon class="size-4" />
+				<Button href={fList.relPath} class="mx-auto flex items-center justify-center">
+					<fList.icon class="size-5" />
 					<span class="bg-primary font-semibold text-white">
 						{fList.label}
 					</span>

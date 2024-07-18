@@ -16,13 +16,15 @@
 	];
 </script>
 
-<header class="w-full">
+<header
+	class="w-full bg-opacity-60 bg-gradient-to-r from-indigo-800 via-blue-800 to-black backdrop-blur-lg backdrop-filter"
+>
 	<div class="flex h-14 items-center px-12 py-8">
-		<nav class="flex flex-col space-x-4 md:flex-row md:space-x-4 md:space-y-0">
+		<nav class="flex space-x-4">
 			{#each featureLists as fList}
-				<Button href={fList.relPath} class="mx-auto flex items-center justify-center">
-					<fList.icon class="size-5" />
-					<span class="bg-primary font-semibold text-white">
+				<Button variant="ghost" href={fList.relPath} class="flex items-center space-x-2 text-white">
+					<fList.icon class="h-5 w-5" />
+					<span class="font-semibold">
 						{fList.label}
 					</span>
 				</Button>
